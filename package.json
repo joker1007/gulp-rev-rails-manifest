@@ -2,7 +2,11 @@
   "name": "gulp-rev-rails-manifest",
   "version": "0.0.1",
   "description": "Write manifest.json that is Rails assets helper compatible",
-  "repository": "https://github.com/joker1007/gulp-rev-rails-manifest",
+  "homepage": "https://github.com/joker1007/gulp-rev-rails-manifest",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joker1007/gulp-rev-rails-manifest.git"
+  },
   "author": "Tomohiro Hashidate",
   "license": "MIT",
   "main": "index.js",
