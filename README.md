@@ -1,4 +1,5 @@
 # [gulp](https://github.com/wearefractal/gulp)-rev-rails-manifest
+[![Build Status](https://travis-ci.org/joker1007/gulp-rev-rails-manifest.svg?branch=master)](https://travis-ci.org/joker1007/gulp-rev-rails-manifest)
 
 Write [gulp-rev](https://github.com/sindresorhus/gulp-rev "sindresorhus/gulp-rev") manifest.json that is Rails assets helper compatible
 
