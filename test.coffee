@@ -1,10 +1,14 @@
 'use strict'
 
+fs = require('fs')
 assert = require('power-assert')
 gulp = require('gulp')
 gutil = require('gulp-util')
 rev = require('gulp-rev')
 manifest = require('./index')
+
+jsMtime = fs.statSync('./fixtures/sample.js').mtime
+cssMtime = fs.statSync('./fixtures/sample.css').mtime
 
 describe 'gulp-rev-rails-manifest', ->
   it 'should write manifest file that is Rails asset helper compatible', (cb) ->
@@ -18,7 +22,7 @@ describe 'gulp-rev-rails-manifest', ->
         files:
           "sample-af9d57fd.js":
             logical_path: "sample.js"
-            mtime: new Date(2014, 8, 17, 3, 7, 16).toJSON()
+            mtime: jsMtime.toJSON()
             size: 21
             digest: "af9d57fd"
         assets:
@@ -39,12 +43,12 @@ describe 'gulp-rev-rails-manifest', ->
         files:
           "sample-12267ffb.css":
             logical_path: "sample.css"
-            mtime: new Date(2014, 8, 17, 3, 58, 10).toJSON()
+            mtime: cssMtime.toJSON()
             size: 23
             digest: "12267ffb"
           "sample-af9d57fd.js":
             logical_path: "sample.js"
-            mtime: new Date(2014, 8, 17, 3, 7, 16).toJSON()
+            mtime: jsMtime.toJSON()
             size: 21
             digest: "af9d57fd"
         assets:
