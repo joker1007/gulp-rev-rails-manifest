@@ -1,0 +1,28 @@
+{
+  "name": "gulp-rev-rails-manifest",
+  "version": "0.0.1",
+  "description": "Write manifest.json that is Rails assets helper compatible",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require enable-power-assert.js test.coffee"
+  },
+  "keywords": [
+    "gulpplugin",
+    "asset"
+  ],
+  "author": "Tomohiro Hashidate",
+  "license": "MIT",
+  "devDependencies": {
+    "coffee-script": "^1.8.0",
+    "espower-coffee": "^0.9.0",
+    "gulp": "^3.8.8",
+    "gulp-rev": "^1.1.0",
+    "mocha": "^1.21.4",
+    "power-assert": "^0.9.0"
+  },
+  "dependencies": {
+    "gulp-util": "^3.0.1",
+    "object-assign": "^1.0.0",
+    "through2": "^0.6.1"
+  }
+}
