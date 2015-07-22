@@ -79,8 +79,8 @@ railsManifest = (options = {}) ->
           oldManifest = JSON.parse(manifestFile.contents.toString())
         catch err
 
-        manifest.files = objectAssign(oldManifest.files, manifest.files)
-        manifest.assets = objectAssign(oldManifest.assets, manifest.assets)
+        manifest.files = objectAssign(oldManifest.files || {}, manifest.files || {})
+        manifest.assets = objectAssign(oldManifest.assets || {}, manifest.assets || {})
 
       manifestFile.contents = new Buffer(JSON.stringify(sortKeys(manifest), null, '  '))
       @push(manifestFile)

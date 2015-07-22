@@ -106,8 +106,8 @@ railsManifest = function(options) {
           } catch (_error) {
             err = _error;
           }
-          manifest.files = objectAssign(oldManifest.files, manifest.files);
-          manifest.assets = objectAssign(oldManifest.assets, manifest.assets);
+          manifest.files = objectAssign(oldManifest.files || {}, manifest.files || {});
+          manifest.assets = objectAssign(oldManifest.assets || {}, manifest.assets || {});
         }
         manifestFile.contents = new Buffer(JSON.stringify(sortKeys(manifest), null, '  '));
         _this.push(manifestFile);
