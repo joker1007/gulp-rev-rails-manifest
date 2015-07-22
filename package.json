@@ -31,6 +31,8 @@
   "dependencies": {
     "gulp-util": "^3.0.1",
     "object-assign": "^1.0.0",
-    "through2": "^0.6.1"
+    "sort-keys": "^1.1.0",
+    "through2": "^0.6.1",
+    "vinyl-file": "^1.2.1"
   }
 }
