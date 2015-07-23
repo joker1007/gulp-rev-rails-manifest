@@ -1,6 +1,6 @@
 {
   "name": "gulp-rev-rails-manifest",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Write manifest.json that is Rails assets helper compatible",
   "homepage": "https://github.com/joker1007/gulp-rev-rails-manifest",
   "repository": {
